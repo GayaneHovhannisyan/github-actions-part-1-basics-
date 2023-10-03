@@ -8,19 +8,19 @@ name: My-GitHubActions-Basics
 on: 
   push:
     branches:
-      -master
+      - master
 jobs:
- My_testings:
-  runs-on: ubuntu-latest
+  My_testings:
+    runs-on: ubuntu-latest
 
-  steps: 
-    - name: Print Hello Message
-      run : echo "Hello World message from testing job"
+    steps: 
+       - name: Print Hello Message
+         run : echo "Hello World message from testing job"
 
 
- My_Deploy:
-  runs-on: ubuntu-latest
+  My_Deploy:
+    runs-on: ubuntu-latest
   
-  steps:
-    - name: Print Hello Massage 
-      run : echo "Hello World message from deploy job"
+    steps:
+      - name: Print Hello Massage 
+        run : echo "Hello World message from deploy job"
