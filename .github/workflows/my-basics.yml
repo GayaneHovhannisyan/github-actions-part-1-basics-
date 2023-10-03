@@ -1,0 +1,27 @@
+#-------------------------------
+#Github action Part 1-Basicse
+#
+#copylife (c) by Gaya
+#-------------------------------------
+name: My-GitHubActions-Basics
+
+on:
+  push:
+    branches:
+      -master
+
+jobs:
+ My_testings:
+  runs-on: ubuntu latest
+
+    steps:
+      -name: Print Hello Message
+       run: echo "Hello World message from testing job"
+
+
+ My_Deploy:
+  runs-on: ubuntu latest
+     
+     steps:
+     -name: Print Hello Massage 
+      run: echo "Hello World message from deploy job"
